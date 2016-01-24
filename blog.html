@@ -2,13 +2,19 @@
 <Head>
     <style>
         #BlogPost{
-            background-color:lightblue;
+            background-color:lightblue;  color:purple;
         } 
         #navbar{
-            background-color:teal;
+            background-color:teal; color:white; font-family:"Trebuchet MS", sans-serif;
         }
-
- 
+        body{
+            background-color:silver; Color: #800080; 
+        }
+        .title{
+            color:grey;
+        }
+       
+      </style>
 </head>
 
 <body>
@@ -24,8 +30,8 @@
         </div>
         
         <div id="BlogPost">
-            <h2>Blog Post</h2>
-            <h3>1-23-16</h3>
+            <h2 class="title"><marquee behavior="alternate">Blog Post</marquee></h2></h2>
+            <h3 class="title"><marquee behavior="alternate" direction="left" scrollamount="10">1-23-16</marquee></h3>
             <p>
               Hello, this is a blog about me Alonso Ortiz taking Accelerated Computer Science(ACS).
             I am writing this blog in order to see my progress in ACS. The advantage here is being able to see my
@@ -35,97 +41,16 @@
             from ACS for whatever reason. This would be like me taking notes, however thinking about process also. 
             Back to the “a href”, the href stands for hypertext reference. Hyper for fast; reference to refer, so the
             text refers to something else fast. That is critical thinking, and what I am really hoping to do is 
-            create useful info into this blog.
+            create useful info into this blog.<br>
             More about ACS, I am taking ACS because I really enjoy coding and think it is very interesting. My plans
             for ACS is learning advance coding for my level. Like I said before I enjoy coding, and feel like I need 
             to learn more code. Now that I am thinking about my ACS plans I wonder if I want to take coding to a profession.
             It would be cool to code websites, games, software, cars, music, and maybe robots. I’ll make that decision
-            through the next 3 years hopefully. Right now I just want to focus on new code languages and functions
-            ----------------------------------------------------------------------------------------------------------------
+            through the next 3 years hopefully. Right now I just want to focus on new code languages and functions<br>
+            -------------------------------------------------------------------------------------------------
             </p>
-            
+            <img id="ballon_game" src="http://mryoho.github.io/img/Blog/Blog1-HelloWorld/balloon_game.jpg" width="250" alt="Alpha Students playing ballon game">
+            <p><strong>Alpha students playing a ballon challenge 1-20-16</strong></p>
         </div>
-       <div align="center" id="img" style="position:absolute;">
-<img src="http://www.htmlbestcodes.com/images/ball.gif" onMouseDown="pauseResume();">
-</div>
-<SCRIPT LANGUAGE="JavaScript">
-var step = 5;
-var delay = 30;
-var height = 0;
-var Hoffset = 0;
-var Woffset = 0;
-var yon = 0;
-var xon = 0;
-var pause = true;
-var interval;
-var name = navigator.appName;
-if(name == "Microsoft Internet Explorer") name = true;
-else name = false;
-var xPos = 20;
-if(name) var yPos = document.body.clientHeight;
-else var yPos = window.innerHeight;
-function changePos() {
-if(name) {
-width = document.body.clientWidth;
-height = document.body.clientHeight;
-Hoffset = img.offsetHeight;
-Woffset = img.offsetWidth;
-img.style.left = xPos + document.body.scrollLeft;
-img.style.top = yPos + document.body.scrollTop;
-}
-else {
-height = window.innerHeight;
-width = window.innerWidth;
-Hoffset =33;
-Woffset =30;
-document.getElementById('img').style.top = yPos + window.pageYOffset;
-document.getElementById('img').style.left = xPos + window.pageXOffset;
-}
-if (yon) {
-yPos = yPos + step;
-}
-else {
-yPos = yPos - step;
-}
-if (yPos < 0) {
-yon = 1;
-yPos = 0;
-}
-if (yPos >= (height - Hoffset)) {
-yon = 0;
-yPos = (height - Hoffset);
-}
-if (xon) {
-xPos = xPos + step;
-}
-else {
-xPos = xPos - step;
-}
-if (xPos < 0) {
-xon = 1;
-xPos = 0;
-}
-if (xPos >= (width - Woffset)) {
-xon = 0;
-xPos = (width - Woffset);
-   }
-}
-function start() {
-document.getElementById('img').style.visibility = "visible";
-interval = setInterval('changePos()',delay);
-}
-function pauseResume() {
-if(pause) {
-clearInterval(interval);
-pause = false;
-}
-else {
-interval = setInterval('changePos()',delay);
-pause = true;
-   }
-}
-start();
-//  End -->
-</script>
-<br/><div style="clear:both"></div><div><a target="_blank" href="http://www.htmlbestcodes.com/"><span style="font-size: 8pt; text-decoration: none">HTML Best Codes</span></a></div>
+
 </body>    
