@@ -1,69 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Your Name Here - Portfolio</title>
-        
-        <style>
-             body {
-             background:url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website-Background-Images10.jpg");
-            }
-             #navbar {
-             color:white; font-family:"Trebuchet MS", sans-serif;
-            }
-            .heading {
-            color:black;
-            }
-            .paragraph1 {
-             color:white;
-            }
-            .paragraph2 {
-              color:white; 
-            }
-            #main{
-             background-color:rgb(51, 102, 255); 
-            }
-        </style>
-        
-    </head>
-    <body link="white">
-                              <!--Use divs--->  <!--choose a different colors--><!--make everything match-->
-        <div id="navbar">
- 
-          <h3>Website Navigation</h3>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./future_plan.html">Future Plans</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact Info</a></li>
-          </ul>
-          
-</div>
-        
-<div id="main">
-            <!-- Put all of your main HTML here -->
-          <h1 class="heading">Alonso Ortiz</h1>
-          <p class="heading">Founding Student of Alpha Cindy Avitia </p>
-            
-                  <!-- Image -->
-          <a href=""><img id="lion" src="http://artfiles.alphacoders.com/780/78095.jpg" width="500"></a>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Mr. Yoho's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
     
-          <h2 class="paragraph1">Where I came from</h2>
-          <p class="paragraph1">
-            I come from San Jose, but  my parents are from <em>Mexico</em>.<br>
-          I am the <strong>second oldest of my brothers</strong>. I come from a loving family <br>
-           with problems and challenges. Right now I am trying to accomplish an <br>
-           important challenge.
-         </p>
-          <h2 class="paragraph2">What I am Doing </h2>
-          <p class="paragraph2">
-            I am a student at <strong>Alpha Cindy Avitia High School</strong>. I am taking the <br>
-            following subjects: History, Algebra, Computer Science, Biology <br>
-            Spanish, and English. My classes are challenging, however that <br>
-            that isn't an exuse to not try my best. I have set a goal for  having <br>
-            all my classes to have a <em>shinnig A.</em> Showing how hard I would work.
-          </p>
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("./img/home/south_sister.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
         </div>
-    </body>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Alonso Ortiz's Webpage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">I come from San Jose, but  my parents are from Mexico. I am the second oldest of my brothers. I come from a loving family with problems and challenges. Right now I am trying to accomplish an important challenge.
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">I am a student at Alpha Cindy Avitia High School. I am taking the following subjects: History, Algebra, Computer Science, Biology Spanish, and English. My classes are challenging, however that isn't an exuse to not try my best. I have set a goal for having all my classes to have a shinnig A. Showing how hard I would work.</p>
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
 </html>
