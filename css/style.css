@@ -12,15 +12,9 @@
       text-decoration: none;
     }
 
-    .navbar-outside {
-      display:block;
-      background-color: #313732;
-      height:80px;
-    }
-
     .navbar {
       display:block;
-      background-color: #313732;
+      background-color: #3F3F4D;
       height:80px;
       margin:0 auto;
       min-width:600px;
@@ -41,11 +35,11 @@
     }
 
     .navigation li:hover {
-      background-color: #F26101;
+      background-color: #FF5E5E;
     }
     
     .active {
-        background-color: #4CAF50;
+        background-color: #FF2424;
         color: white;
     }
     /* END NAVBAR CSS */

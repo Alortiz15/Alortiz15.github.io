@@ -1,15 +1,16 @@
 <!Doctype html>
-<Head>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
     <style>
         #BlogPost{
             background-color:rgb(255, 153, 51);  
             color:rgb(204, 51, 0);
         } 
-        #navbar{
-            color:grey; 
-            font-family:"Trebuchet MS", sans-serif;
-        }
+
         body{
+            font-family: Verdana;
             Color: #800080; 
             background:url("http://royalimageny.com/rinymedia2/wp-content/uploads/2012/09/angles_orange_background.jpg");
             background-size:cover;
@@ -25,17 +26,16 @@
 </head>
 
 <body>
-        <div id="navbar">
- 
-          <h3>Website Navigation</h3>
-          <ul>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
             <li><a href="./index.html">Home</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./future_plan.html">Future Plans</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-               <li><a href="./contact.html">Contact Info</a></li>
-          </ul>
-        </div>
+            <li class="active"><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
         
         <div id="BlogPost">
             <h2 class="title"><marquee behavior="alternate">Blog Post</marquee></h2>
